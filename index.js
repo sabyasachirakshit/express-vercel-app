@@ -7,14 +7,14 @@ app.use(cors());
 
 const port = 9000;
 
-app.get("/", (req, res) => {
-  console.log("hitting server on / path");
-  res.json({ message: "Hello from Express app" });
-});
-
 app.get("/test", (req, res) => {
   console.log("hitting server on /test path");
   res.json({ message: "Hello from Express test app" });
+});
+
+app.get("/hello", (req, res) => {
+  console.log("hitting server on / path");
+  res.json({ message: "Hello from Express app" });
 });
 
 app.listen(port, () => {
