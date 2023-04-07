@@ -7,12 +7,12 @@ app.use(cors());
 
 const port = 9000;
 
-app.get("/api/", (req, res) => {
+app.get("/", (req, res) => {
   console.log("hitting server on / path");
   res.json({ message: "Hello from Express app" });
 });
 
-app.get("/api/test", (req, res) => {
+app.get("/test", (req, res) => {
   console.log("hitting server on /test path");
   res.json({ message: "Hello from Express test app" });
 });
