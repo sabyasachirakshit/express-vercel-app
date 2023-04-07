@@ -14,7 +14,7 @@ app.get("/test", (req, res) => {
 
 app.get("/hello", (req, res) => {
   console.log("hitting server on / path");
-  res.json({ message: "Hello from Express app" });
+  res.json({ message: "Hello from Express app ok" });
 });
 
 app.listen(port, () => {
